@@ -3,33 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ✅ Ionicons CDN -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
   <title>Hubaal</title>
 </head>
 <body class="bg-gray-100">
 
-  <nav>
-    <div class="bg-indigo-700 flex justify-between items-center px-5 py-3">
+  <!--  Navbar -->
+  <nav class="bg-indigo-700">
+    <div class="flex justify-between items-center px-5 py-3">
       <!-- Logo -->
       <img class="w-10" src="img/logo.png" alt="logo">
 
-      <!-- Menu links -->
-      <ul class="hidden md:flex text-white space-x-6 ">
+      <!-- Links -->
+      <ul id="menu" class="hidden md:flex text-white space-x-6">
         <li><a href="index.html" class=" hover:text-gray-300">Home</a></li>
-        <li><a href="courses.html" class=" hover:text-gray-300">Courses</a></li>
-        <li><a href="addcourse.html" class="bg-black px-1 hover:text-gray-300">Add Courses</a></li>
+        <li><a href="courses.html" class="hover:text-gray-300">Courses</a></li>
+        <li><a href="addcourse.html" class=" bg-black px-1 hover:text-gray-300">Add Courses</a></li>
       </ul>
 
-      <!-- Menu toggle (mobile) -->
-      <button id="menu-btn" class="flex md:hidden text-white">Menu</button>
+      <!--  Menu toggle (Mobile) -->
+      <ion-icon id="menu-toggle" class="text-white text-3xl md:hidden cursor-pointer" name="menu-outline"></ion-icon>
     </div>
 
-  
+    <!--  Mobile menu -->
+    <ul id="mobile-menu" class="hidden flex-col bg-indigo-700 text-white space-y-2 p-4 md:hidden">
+      <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
+      <li><a href="courses.html" class="block hover:text-gray-300">Courses</a></li>
+      <li><a href="addcourse.html" class="block hover:text-gray-300">Add Courses</a></li>
+    </ul>
   </nav>
-
 
  
 
-  
+  <!-- JavaScript -->
+  <script>
+    const toggleBtn = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
 </body>
 </html>
