@@ -1,55 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ✅ Tailwind CDN -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- ✅ Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ✅ Ionicons CDN -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-  <title>Hubaal</title>
-</head>
-<body class="bg-gray-100">
+  <!-- ✅ Google Font (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"/>
 
-  <!--  Navbar -->
-  <nav class="bg-indigo-700 fixed top-0 w-full z-1000">
+    <title>Couse details</title>
+</head>
+<body>
+      <nav class="bg-indigo-700 border-b border-white fixed top-0 left-0 w-full z-50">
     <div class="flex justify-between items-center px-5 py-3">
       <!-- Logo -->
       <img class="w-10" src="img/logo.png" alt="logo">
 
       <!-- Links -->
       <ul id="menu" class="hidden md:flex text-white space-x-6">
-        <li><a href="index.html" class=" hover:text-gray-300">Home</a></li>
+        <li><a href="#" class="bg-black px-1 hover:text-gray-300">Home</a></li>
         <li><a href="courses.html" class="hover:text-gray-300">Courses</a></li>
-        <li><a href="addcourse.html" class=" bg-black px-1 hover:text-gray-300">Add Courses</a></li>
+        <li><a href="addcourse.html" class="hover:text-gray-300">Add Courses</a></li>
       </ul>
 
-      <!--  Menu toggle (Mobile) -->
+      <!-- Menu Toggle (Mobile) -->
       <ion-icon id="menu-toggle" class="text-white text-3xl md:hidden cursor-pointer" name="menu-outline"></ion-icon>
     </div>
 
-    <!--  Mobile menu -->
+    <!-- Mobile Menu -->
     <ul id="mobile-menu" class="hidden flex-col bg-indigo-700 text-white space-y-2 p-4 md:hidden">
       <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
       <li><a href="courses.html" class="block hover:text-gray-300">Courses</a></li>
       <li><a href="addcourse.html" class="block hover:text-gray-300">Add Courses</a></li>
     </ul>
-  </nav>
+      </nav>
+    
 
- 
-
-  <!-- JavaScript -->
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-
+      <div class="flex pt-20 items-center pl-4 text-orange-500 space-x-1 ">
+        <a href="index.html"><ion-icon name="arrow-back-outline" class="pt-2"></ion-icon></a>
+       <a href="index.html"> <H2>Back To Home</H2></a>
+      </div>
 </body>
 </html>

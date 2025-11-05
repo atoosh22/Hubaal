@@ -2,26 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ✅ Tailwind CDN -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hubaal</title>
+
+  <!-- ✅ Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ✅ Ionicons CDN -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <!-- font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <title>Hubaal</title>
+
+  <!-- ✅ Google Font (Roboto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-[Roboto]">
 
-  <!--  Navbar -->
-  <nav class="bg-indigo-700 border-b border-white ">
+  <!-- ✅ Navbar -->
+  <nav class="bg-indigo-700 border-b border-white fixed top-0 left-0 w-full z-50">
     <div class="flex justify-between items-center px-5 py-3">
       <!-- Logo -->
       <img class="w-10" src="img/logo.png" alt="logo">
@@ -33,11 +37,11 @@
         <li><a href="addcourse.html" class="hover:text-gray-300">Add Courses</a></li>
       </ul>
 
-      <!--  Menu toggle (Mobile) -->
+      <!-- Menu Toggle (Mobile) -->
       <ion-icon id="menu-toggle" class="text-white text-3xl md:hidden cursor-pointer" name="menu-outline"></ion-icon>
     </div>
 
-    <!--  Mobile menu -->
+    <!-- Mobile Menu -->
     <ul id="mobile-menu" class="hidden flex-col bg-indigo-700 text-white space-y-2 p-4 md:hidden">
       <li><a href="index.html" class="block hover:text-gray-300">Home</a></li>
       <li><a href="courses.html" class="block hover:text-gray-300">Courses</a></li>
@@ -45,196 +49,87 @@
     </ul>
   </nav>
 
-  <!-- Hero Section -->
-  <div class="container bg-indigo-700 py-32 text-white ">
-    <h1 class="text-2xl md:font-bold md:text-5xl text-center">
-      Become <span class="text-[#3e3e3e]">Full stack</span> Web developer
+  <!-- ✅ Hero Section -->
+  <div class="bg-indigo-700 py-32 text-white  text-center">
+    <h1 class="text-3xl md:text-5xl font-bold">
+      Become <span class="text-orange-500">Full Stack</span> Web Developer
     </h1>
-    <p class="text-center font-thin text-xl md:text-2xl md:text-italic  p-2">Learn skills you need to become web
-      developer</p>
+    <p class="font-light text-lg md:text-2xl mt-2">
+      Learn the skills you need to become a professional web developer.
+    </p>
   </div>
 
-  <!-- learn section -->
-
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-3 mt-10  p-10">
+  <!-- ✅ Learn Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10 p-10">
     <!-- Learners Card -->
-    <div class="shadow-lg bg-gray-200 rounded max-w-4xl px-5 py-6 mx-auto">
+    <div class="shadow-lg bg-gray-200 rounded px-6 py-6 max-w-4xl mx-auto">
       <h2 class="text-4xl font-bold mb-2">For Learners</h2>
       <p class="mb-4">Browse our courses and start learning today.</p>
-      <a href="#" class="text-blue-600 font-semibold hover:underline">Browse Courses</a>
+      <a href="courses.html" class="bg-black text-white px-4 py-2 rounded font-semibold hover:bg-gray-800 transition">Browse Courses</a>
     </div>
 
     <!-- Instructors Card -->
-    <div class="shadow-lg bg-gray-200 rounded max-w-4xl px-3 py-6 mx-auto">
-      <h2 class="text-4xl font-bold mb-2"> Instructors</h2>
+    <div class="shadow-lg bg-gray-200 rounded px-6 py-6 max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-2">Instructors</h2>
       <p class="mb-4">Share your knowledge and teach with us today.</p>
-      <a href="#" class="text-blue-600 font-semibold hover:underline">Add course</a>
+      <a href="#" class="bg-indigo-700 text-white px-4 py-2 rounded font-semibold hover:bg-indigo-500 transition">Add Course</a>
     </div>
   </div>
 
-  <!-- Recent courses -->
+  <!-- ✅ Recent Courses -->
   <section class="bg-gray-200">
-    <h1 class="text-5xl text-center text-bold font-[Roboto] text-indigo-700 p-10">Recent Courses</h1>
+    <h1 class="text-5xl text-center font-bold text-indigo-700 p-10">Recent Courses</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 mx-10 mt-12 gap-6">
-      <!-- card 1 -->
+
+      <!-- Card 1 -->
       <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Front-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">HTML & CSS</h2>
-
-        <p class="px-4 py-5 ">went to master Html and css ? our hands <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
+        <span class="text-gray-500 px-5">Front-End</span>
+        <h2 class="font-bold px-5">HTML & CSS</h2>
+        <p class="px-4 py-5">Want to master HTML and CSS? Our hands-on course guides you through creating stunning responsive designs.</p>
+        <a href="#" class="text-indigo-500 pl-6">Duration: 3 months</a>
+        <div class="flex items-center text-orange-500 p-6">
           <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>HTML CSS</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
+          <h3 class="ml-2">HTML & CSS</h3>
+        </div>
+        <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block py-2" href="coursedetails.html">Read More</a>
       </div>
 
-       <!-- card 2 -->
+      <!-- Card 2 -->
       <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Database</span>
-        <h2 class="font-[Roboto] font-bold px-5">Sql Mastery</h2>
-
-        <p class="px-4 py-5 ">Ready to drive Sql mastery ? our hands <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 2months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Sql Mastery</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
+        <span class="text-gray-500 px-5">Database</span>
+        <h2 class="font-bold px-5">SQL Mastery</h2>
+        <p class="px-4 py-5">Ready to dive into SQL mastery? Learn how to manage and query databases effectively with real-world examples.</p>
+        <a href="#" class="text-indigo-500 pl-6">Duration: 2 months</a>
+        <div class="flex items-center text-orange-500 p-6">
+          <ion-icon class="text-2xl" name="server-outline"></ion-icon>
+          <h3 class="ml-2">SQL Mastery</h3>
+        </div>
+        <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block py-2" href="">Read More</a>
       </div>
 
-       <!-- card 3 -->
+      <!-- Card 3 -->
       <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Back-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
-
-        <p class="px-4 py-5 ">looking to master Node and express ?  <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
+        <span class="text-gray-500 px-5">Back-End</span>
+        <h2 class="font-bold px-5">Node & Express</h2>
+        <p class="px-4 py-5">Looking to master Node and Express? This course walks you through building fast and scalable server-side applications.</p>
+        <a href="#" class="text-indigo-500 pl-6">Duration: 3 months</a>
+        <div class="flex items-center text-orange-500 p-6">
           <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Node & Express</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
+          <h3 class="ml-2">Node & Express</h3>
+        </div>
+        <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block py-2" href="">Read More</a>
       </div>
-      
-     
     </div>
-
   </section>
 
-  <!-- View all courses -->
-   <div>
-    <a class="block text-center p-2 text-white bg-black rounded mt-10" href="courses.html"> View All Courses</a>
-   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- JavaScript -->
+  <!-- ✅ View All Courses Button -->
+  <div class="flex justify-center">
+    <a href="courses.html" class="text-center p-2 text-white bg-black rounded mt-10 mb-12 w-40 hover:bg-gray-800 transition">
+      View All Courses
+    </a>
+  </div>
+
+  <!-- ✅ JavaScript for Mobile Menu -->
   <script>
     const toggleBtn = document.getElementById('menu-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -245,5 +140,4 @@
   </script>
 
 </body>
-
 </html>

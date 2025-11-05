@@ -15,7 +15,7 @@
 <body class="bg-gray-100">
 
   <!--nav -->
-  <nav class="bg-indigo-700">
+  <nav class="bg-indigo-700 fixed top-0 w-full z-1000">
     <div class="flex justify-between items-center px-5 py-3">
       <!-- Logo -->
       <img class="w-10" src="img/logo.png" alt="logo">
@@ -41,106 +41,90 @@
 
 
   <!-- Recent courses -->
-  <section class="bg-gray-200">
-    <h1 class="text-5xl text-center text-bold font-[Roboto] text-indigo-700 p-10">All Courses</h1>
-    <div class="grid grid-cols-1 md:grid-cols-3 mx-10 mt-12 gap-6">
-      <!-- card 1 -->
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Front-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">HTML & CSS</h2>
+ <section class="bg-gray-200">
+  <h1 class="text-5xl text-center font-bold font-[Roboto] text-indigo-700 pt-32">All Courses</h1>
 
-        <p class="px-4 py-5 ">went to master Html and css ? our hands <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>HTML CSS</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
+  <div class="grid grid-cols-1 md:grid-cols-3 mx-10 mt-12 gap-6">
+    <!-- card 1 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Front-End</span>
+      <h2 class="font-[Roboto] font-bold px-5">HTML & CSS</h2>
+      <p class="px-4 py-5 ">Want to master HTML and CSS? Our hands-on course will guide you through the process of creating stunning responsive designs.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 3 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
+        <h3>HTML & CSS</h3>
       </div>
-
-       <!-- card 2 -->
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Database</span>
-        <h2 class="font-[Roboto] font-bold px-5">Sql Mastery</h2>
-
-        <p class="px-4 py-5 ">Ready to drive Sql mastery ? our hands <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 2months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Sql Mastery</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
-      </div>
-
-       <!-- card 3 -->
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Back-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
-
-        <p class="px-4 py-5 ">looking to master Node and express ?  <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Node & Express</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
-      </div>
-
-      <!-- card 4 -->
-       
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Back-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
-
-        <p class="px-4 py-5 ">looking to master Node and express ?  <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Node & Express</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
-      </div>
-
-      <!-- card 5 -->
- 
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Back-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
-
-        <p class="px-4 py-5 ">looking to master Node and express ?  <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Node & Express</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
-      </div>
-
-      <!-- card 6 -->
-
-      <div class="bg-white shadow-lg rounded pt-6">
-        <span class="text-gray-500 px-5 ">Back-End</span>
-        <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
-
-        <p class="px-4 py-5 ">looking to master Node and express ?  <br>course will guid you  through the process<br> of creating stuning responsive .....</p>
-         <a href="#" class="text-indigo-500 pl-6"> Duration 3months</a> 
-
-         <div class="flex items-center text-orange-500 p-6">
-          <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
-          <h3>Node & Express</h3>
-         </div>
-         <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More </a>
-      </div>
-      
-     
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
     </div>
 
-  </section>
+    <!-- card 2 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Database</span>
+      <h2 class="font-[Roboto] font-bold px-5">SQL Mastery</h2>
+      <p class="px-4 py-5 ">Ready to dive into SQL mastery? Learn how to manage and query databases effectively with real-world examples and projects.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 2 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="server-outline"></ion-icon>
+        <h3>SQL Database</h3>
+      </div>
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
+    </div>
+
+    <!-- card 3 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Back-End</span>
+      <h2 class="font-[Roboto] font-bold px-5">Node & Express</h2>
+      <p class="px-4 py-5 ">Looking to master Node and Express? This course walks you through building fast and scalable server-side applications.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 3 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="code-slash-outline"></ion-icon>
+        <h3>Node & Express</h3>
+      </div>
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
+    </div>
+
+    <!-- card 4 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Programming</span>
+      <h2 class="font-[Roboto] font-bold px-5">Python Basics</h2>
+      <p class="px-4 py-5 ">Start your coding journey with Python! Learn syntax, logic, and practical projects to build your foundation in programming.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 2 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="logo-python"></ion-icon>
+        <h3>Python Basics</h3>
+      </div>
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
+    </div>
+
+    <!-- card 5 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Design</span>
+      <h2 class="font-[Roboto] font-bold px-5">UI/UX Design</h2>
+      <p class="px-4 py-5 ">Learn the principles of user interface and user experience design. Create visually appealing and user-friendly products.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 2.5 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="color-palette-outline"></ion-icon>
+        <h3>UI/UX Design</h3>
+      </div>
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
+    </div>
+
+    <!-- card 6 -->
+    <div class="bg-white shadow-lg rounded pt-6">
+      <span class="text-gray-500 px-5 ">Mobile Development</span>
+      <h2 class="font-[Roboto] font-bold px-5">Flutter & Dart</h2>
+      <p class="px-4 py-5 ">Build beautiful cross-platform apps using Flutter and Dart. From setup to deployment — learn everything hands-on.</p>
+      <a href="#" class="text-indigo-500 pl-6">Duration: 3 months</a> 
+      <div class="flex items-center text-orange-500 p-6">
+        <ion-icon class="text-2xl" name="phone-portrait-outline"></ion-icon>
+        <h3>Flutter & Dart</h3>
+      </div>
+      <a class="bg-indigo-700 hover:bg-indigo-500 text-white rounded text-center block" href="">Read More</a>
+    </div>
+  </div>
+</section>
+
 
 
 
